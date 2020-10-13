@@ -36,7 +36,8 @@ body {
 .designers h3,
 .similar-product h3,
 .cart-header h3,
-.checkout-modal-success h3 {
+.checkout-modal-success h3,
+.catalogue-product h3 {
   font-family: 'Lora';
   color: #333973;
   font-weight: bold;
@@ -179,4 +180,40 @@ body {
 .checkout-card {
   background-color: #f7f7fb;
   border: 0px;
+}
+
+.card-category {
+  border: 0px;
+  position: relative;
+}
+
+.card-category:hover a {
+  opacity: 1;
+}
+
+.card-category a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-category {
+  background-color: #2d2d2d;
+  display: flex;
+  height: 113px;
+}
+
+.btn-category a {
+  color: #df85b8 !important;
+  font-size: 28px;
+  padding-right: 30px;
+}
+
+.btn-category:hover a {
+  color: #dee2e6 !important;
 }
